@@ -7,7 +7,6 @@ public class Product_1 {
             Scanner sc = new Scanner(System.in);
 
             int id = sc.nextInt();
-            sc.nextLine();
             String name = sc.nextLine();
             String cat = sc.nextLine();
             int price = sc.nextInt();
