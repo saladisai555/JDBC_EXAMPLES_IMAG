@@ -21,11 +21,11 @@ public class Product_2 {
         );
 
         ps.setInt(1, 101);
-        ps.setString(2, "Mouse");
+        ps.setString(2, "abc");
         ps.executeUpdate();
 
         ps.setInt(1, 102);
-        ps.setString(2, "Keyboard");
+        ps.setString(2, "xyz");
         ps.executeUpdate();
 
         // Update Records
@@ -33,11 +33,11 @@ public class Product_2 {
                 "UPDATE product SET prod_name=? WHERE prod_id=?"
         );
 
-        ps1.setString(1, "New Mouse");
+        ps1.setString(1, "ABC");
         ps1.setInt(2, 101);
         ps1.executeUpdate();
 
-        ps1.setString(1, "New Keyboard");
+        ps1.setString(1, "XYZ");
         ps1.setInt(2, 102);
 
         int n = ps1.executeUpdate();
