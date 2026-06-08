@@ -7,6 +7,7 @@ public class Product_1 {
             Scanner sc = new Scanner(System.in);
 
             int id = sc.nextInt();
+            sc.nextLine();
             String name = sc.nextLine();
             String cat = sc.nextLine();
             int price = sc.nextInt();
@@ -27,7 +28,7 @@ public class Product_1 {
             ps.setInt(1, id);
             ps.setString(2, name);
             ps.setString(3, cat);
-            ps.setInt(4, price);  // ✅ fixed
+            ps.setInt(4, price);  // 
 
             int n = ps.executeUpdate();
             System.out.println(n + " row(s) inserted");
