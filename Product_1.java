@@ -28,7 +28,7 @@ public class Product_1 {
             ps.setInt(1, id);
             ps.setString(2, name);
             ps.setString(3, cat);
-            ps.setInt(4, price);  // 
+            ps.setInt(4, price);  
 
             int n = ps.executeUpdate();
             System.out.println(n + " row(s) inserted");
