@@ -20,6 +20,12 @@ public class Product_3 {
             ps.setInt(2, prod_id);
             ps.setString(1, prod_name);
             ps.executeUpdate();
+            int rowsAffected = ps.executeUpdate();
+            if (rowsAffected > 0) {
+                System.out.println("Success: Product updated successfully.");
+            } else {
+                System.out.println("Error: Product ID " + prod_id + " does not exist.");
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
